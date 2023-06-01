@@ -1,0 +1,32 @@
+.project__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.item__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item__screenshot {
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.item__screenshot:hover {
+    transform: scale(2.5);
+}
+
+.item__description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}

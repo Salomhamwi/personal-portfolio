@@ -1,0 +1,50 @@
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+.card-1 {
+    background-color: #c95e5e;
+}
+
+.card-2 {
+    background-color: #6a6eaf;
+}
+
+.card-3 {
+    background-color: #FCD34D;
+}
+
+.services__card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.services__description {
+    font-size: 1rem;
+}
+
+.services__card:hover {
+    background-color: #E5E7EB;
+    transform: translateY(-5px);
+}
+
