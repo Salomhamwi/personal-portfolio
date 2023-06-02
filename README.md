@@ -34,7 +34,7 @@ This section contains some of my skillset and services that i would like to offe
 <p align="center"><img src="./Readme-screenshots/projects-img.png"></p>
 
 This section contains some of my projects that I have worked on. upon hovering on the images, it makes them larger.
-TO DO LIST: upon clicking on them, it shall direct you to a Github repository that is connected with it.
+UPDATED: now upon clicking on them, it shall direct you to the website that is connected with it.
 
 
 
