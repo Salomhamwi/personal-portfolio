@@ -11,7 +11,7 @@ return (
     <section className="portfolio container" id="portfolio">
         <h2 className="section__title">My Projects *Hover Over images 😉*</h2>
         <span className="project__item">
-        <h3 className="item__title">Cookie generator game coming through! *Click me*</h3>
+        <h3 className="item__title">Cookie generator game coming through! *Click the image*</h3>
         <a href="https://react-effects-salomhamwi.vercel.app/" className="item__link">
         <img src={cookiegame} alt="" className="item__screenshot" />
         </a>
@@ -19,7 +19,7 @@ return (
         </span>
 
         <span className="project__item">
-        <h3 className="item__title">Dodge the Arrows Get high score! *Click my image*</h3>
+        <h3 className="item__title">Dodge the Arrows Get high score! *Click the image*</h3>
         <a href="https://project-js-nyan-cat-salomhamwi.vercel.app/" className="item__link">
         <img src={dodgearrows} alt="" className="item__screenshot" />
         </a>
@@ -28,7 +28,7 @@ return (
         </span>
 
         <span className="project__item">
-        <h3 className="item__title">Hang im! word game *Click my image*</h3>
+        <h3 className="item__title">Hang im! word game *Click the image*</h3>
         <a href="https://react-state-p1-salomhamwi.vercel.app/" className="item__link">
         <img src={hangim} alt="" className="item__screenshot" />
         </a>
@@ -37,7 +37,7 @@ return (
         </span>
 
         <span className="project__item">
-        <h3 className="item__title">Search bar Amazon inspired *Click my image*</h3>
+        <h3 className="item__title">Search bar Amazon inspired *Click the image*</h3>
         <a href="https://react-state-p2-salomhamwi.vercel.app/" className="item__link">
         <img src={searchbar} alt="" className="item__screenshot" />
         </a>
@@ -46,7 +46,7 @@ return (
         </span>
 
         <span className="project__item">
-        <h3 className="item__title">Fruits Shop *Click my image*</h3>
+        <h3 className="item__title">Fruits Shop *Click the image*</h3>
         <a href="https://react-ecosystem-salomhamwi.vercel.app/" className="item__link">
         <img src={fruits} alt="" className="item__screenshot" />
         </a>
