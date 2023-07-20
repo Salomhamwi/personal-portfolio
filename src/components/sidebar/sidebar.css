@@ -1,45 +1,98 @@
 .aside {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: var(--body-color);
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
-    padding: 2.3rem;
-    width: 130px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: var(--body-color);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2.3rem;
+  width: 130px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
 }
 
+/* Initial styles for the hamburger, hide it by default */
+.hamburger {
+  display: none;
+  z-index: 100;
+}
 
+/* Show the hamburger when the screen width is smaller than 600px */
+@media (max-width: 600px) {
+  .hamburger {
+      position: fixed; 
+      left: 0px; 
+      top: 10px; 
+      display: block;
+      width: 100px;
+      cursor: pointer;
+      z-index: 100;
+  }
+
+  /* Hide the entire sidebar when the screen width is smaller than 600px */
+  .aside {
+      display: none; 
+      opacity: 1; 
+      pointer-events: none; 
+      transition: transform 0.3s ease;
+      transform: translateX(-100%);
+  }
+
+  
+
+  /* Show the sidebar when it's in the "open" state and the screen width is smaller than 600px */
+  .aside.open {
+      display: flex; 
+      opacity: 1; 
+      pointer-events: auto; 
+      transform: translateX(0); 
+  }
+
+  /* Make the logo transparent when the sidebar is open */
+  .aside.open .nav__logo {
+      opacity: 0;
+      pointer-events: none;
+  }
+  
+  /* Make the logo transparent when the sidebar is closed */
+  .aside .nav__logo {
+      opacity: 1;
+      pointer-events: auto;
+  }
+  
+}
 
 .aside img {
-    margin-left: -16px;
+  margin-left: -16px;
 }
 
-
 .nav__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    font-size: 1.5rem;
-    color: var(--title-color);
-    font-weight: var(--font-bold);
-    outline: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+  outline: none;
 }
 
 .nav__link {
-    color: hsl(229, 100%, 65%)
+  color: hsl(229, 100%, 65%)
 }
 
 .nav__link:visited {
-    color: hsl(229, 100%, 65%)
+  color: hsl(229, 100%, 65%)
 }
 
 .nav__link:hover {
-    color: hsl(43, 100%, 68%)
+  color: hsl(43, 100%, 68%)
+}
+
+/* Add background for hidden sidebar in light mode */
+.Container.closed {
+  background-color: #1f1f1f;
 }
 
 .copyright {
@@ -48,5 +101,3 @@
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
 }
-
-

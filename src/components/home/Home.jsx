@@ -1,6 +1,6 @@
 import React from 'react';
 import "./home.css"
-import Me from "../../images project/KARAM AI.jpg"
+import Me from "../../images project/karam.jpg"
 import HeaderSocials from './HeaderSocials';
 import ScrollDown from './ScrollDown';
 

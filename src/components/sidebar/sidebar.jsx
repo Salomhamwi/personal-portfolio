@@ -1,60 +1,69 @@
-import React from 'react';
-import "./sidebar.css"
-import logo from "../../images project/logo.jpg"
+import React, { useState } from 'react';
+import './sidebar.css';
+import logo from '../../images project/logo.png';
+import hamburger from '../../images project/hamburger.png';
 
+const Sidebar = ({ darkMode }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-const Sidebar = () => {
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
+  return (
+    <div className='Container'>
+      <div className={`hamburger-container ${isOpen ? 'open' : ''}`} onClick={toggleSidebar}>
+        <img src={hamburger} alt="Hamburger Menu" className= "hamburger" />
+      </div>
 
-return (
-    <aside className='aside'>
-        <a href="#home" className= "nav__logo">
-            <img src={logo} alt="" />
+      <aside className={`aside ${isOpen ? 'open' : '' } ${darkMode ? 'dark-mode' : ''}`}>
+
+        <a href="#home" className={`nav__logo ${isOpen ? '' : 'closed'}`}>
+          <img src={logo} alt="" />
         </a>
 
-    <nav className="nav">
-        <div className="nav__menu">
-            <ul className="nav__list">
+        <nav className={`nav ${isOpen ? '' : 'closed'}`}>
+          <div className={`nav__menu ${isOpen ? '' : 'closed'}`}>
+            <ul className={`nav__list ${isOpen ? '' : 'closed'}`}>
+              <li className={`nav__item ${isOpen ? '' : 'closed'}`}>
+                <a href="#home" className={`nav__link ${isOpen ? '' : 'closed'}`}>
+                  <i className="icon-home"></i>
+                </a>
+              </li>
 
-                <li className="nav__item">
-                    <a href="#home" className="nav__link" >
-                        <i className="icon-home"></i>
-                    </a>
-                </li>
+              <li className={`nav__item ${isOpen ? '' : 'closed'}`}>
+                <a href="#about" className={`nav__link ${isOpen ? '' : 'closed'}`}>
+                  <i className="icon-user-following"></i>
+                </a>
+              </li>
 
-                <li className="nav__item">
-                    <a href="#about" className="nav__link">
-                    <i className="icon-user-following"></i>
-                    </a>
-                </li>
+              <li className={`nav__item ${isOpen ? '' : 'closed'}`}>
+                <a href="#services" className={`nav__link ${isOpen ? '' : 'closed'}`}>
+                  <i className="icon-briefcase"></i>
+                </a>
+              </li>
 
-                <li className="nav__item">
-                    <a href="#services" className="nav__link">
-                    <i className="icon-briefcase"></i>
-                    </a>
-                </li>
+              <li className={`nav__item ${isOpen ? '' : 'closed'}`}>
+                <a href="#portfolio" className={`nav__link ${isOpen ? '' : 'closed'}`}>
+                  <i className="icon-layers"></i>
+                </a>
+              </li>
 
-                <li className="nav__item">
-                    <a href="#portfolio" className="nav__link">
-                    <i className="icon-layers"></i>
-                    </a>
-                </li>
-
-                <li className="nav__item">
-                    <a href="#contact" className="nav__link">
-                    <i className="icon-bubble"></i>
-                    </a>
-                </li>
-
+              <li className={`nav__item ${isOpen ? '' : 'closed'}`}>
+                <a href="#contact" className={`nav__link ${isOpen ? '' : 'closed'}`}>
+                  <i className="icon-bubble"></i>
+                </a>
+              </li>
             </ul>
-        </div>
-    </nav>
+          </div>
+        </nav>
 
-    <div className="nav__footer">
-        <span className="copyright"> &copy; 2022 - 2023.</span>
+        <div className={`nav__footer ${isOpen ? '' : 'closed'}`}>
+          <span className={`copyright ${isOpen ? '' : 'closed'}`}> &copy; 2022 - 2023.</span>
+        </div>
+      </aside>
     </div>
-    </aside>
-);
-}
+  );
+};
 
 export default Sidebar;

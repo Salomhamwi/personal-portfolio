@@ -20,8 +20,8 @@ const App = () => {
     <button className="toggle-button" onClick={toggleDarkMode}>
         {darkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
-    <Sidebar />
-    <main className={`main ${darkMode ? 'dark-mode' : ''}`}>
+      <main className={`main ${darkMode ? 'dark-mode' : ''}`}>
+        <Sidebar darkMode={darkMode} />
       <Home />
       <About />
       <Services />

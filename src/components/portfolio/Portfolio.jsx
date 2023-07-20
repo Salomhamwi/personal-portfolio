@@ -3,13 +3,31 @@ import "./portfolio.css"
 import hangim from "../../images project/hangim.png"
 import searchbar from "../../images project/amazonsearchbar.png"
 import cookiegame from "../../images project/cookiesgame.png"
-import fruits from "../../images project/fruitsshop.png"
 import dodgearrows from "../../images project/dodgearrows.png"
+import Roster from "../../images project/RosterScreenshot.png"
+import gadgetgo from "../../images project/gadgetgo.png"
 
 const Portfolio = () => {
 return (
     <section className="portfolio container" id="portfolio">
         <h2 className="section__title">My Projects *Hover Over images 😉*</h2>
+
+        <span className="project__item">
+        <h3 className="item__title">Dragon Boat Roster Planner: K-Sync *Click the image*</h3>
+        <a href="https://k-sync-final-project-salomhamwi.vercel.app/" className="item__link">
+        <img src={Roster} alt="" className="item__screenshot" />
+        </a>
+        <p className="item__description">K-Sync, A social media platform that provides log-in, sign-up, and creating teams. all the user's information are stored on MongoDb database in the backend. the MVP of this project is Create a roster as the team Captain and making them as a post.</p>
+        </span>
+
+        <span className="project__item">
+        <h3 className="item__title">GadgetGo E-commerce Website *Click the image*</h3>
+        <a href="https://github.com/Salomhamwi/project-GROUP-e-commerce.git" className="item__link">
+        <img src={gadgetgo} alt="" className="item__screenshot" />
+        </a>
+        <p className="item__description">GadgetGo is a team project e-commerce website that features a functional e-commerce website in the database that simulates the user buying and selling electronics equipement, i worked hand in hand with my teammates through Github. We utilize the use of Branch and merging them. The database is a json file that is being fed to a MongoDb in the backend.</p>
+        </span>
+
         <span className="project__item">
         <h3 className="item__title">Cookie generator game coming through! *Click the image*</h3>
         <a href="https://react-effects-salomhamwi.vercel.app/" className="item__link">
@@ -45,13 +63,6 @@ return (
         <p className="item__description">Inspired by Amazon search bar! This webpage searches into an existing small database, but it shares the same proportizes such as bold after the writing and keyboard functionallity in addition to mouse.</p>
         </span>
 
-        <span className="project__item">
-        <h3 className="item__title">Fruits Shop *Click the image*</h3>
-        <a href="https://react-ecosystem-salomhamwi.vercel.app/" className="item__link">
-        <img src={fruits} alt="" className="item__screenshot" />
-        </a>
-        <p className="item__description">In this webpage, we have different fruits that can be sellable, and utilizes the use of links to travel inbetween the pages.</p>
-        </span>
 
     </section>
 

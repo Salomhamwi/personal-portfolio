@@ -74,7 +74,17 @@ body {
   --body-color: #1f1f1f;
 }
 
+.html.dark-mode {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
 .main.dark-mode {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.body.dark-mode {
   background-color: var(--body-color);
   color: var(--text-color);
 }
@@ -93,6 +103,7 @@ body {
   outline: none;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 999;
 }
 
 .toggle-button:hover {
