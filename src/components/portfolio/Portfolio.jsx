@@ -22,11 +22,11 @@ return (
 
         <span className="project__item">
         <h3 className="item__title">GadgetGo E-commerce Website</h3>
-        <a href="https://github.com/Salomhamwi/GadgetGO-E-commerce-Readme.git" className="item__link">
+    <a href="https://gadgetgo.vercel.app/" className="item__link">
         <img src={gadgetgo} alt="" className="item__screenshot" />
-        </a>
-        <p className="item__description">GadgetGo is a team project e-commerce website that features a functional e-commerce website in the database that simulates the user buying and selling electronics equipement, i worked hand in hand with my teammates through Github. We utilize the use of Branch and merging them. The database is a json file that is being fed to a MongoDb in the backend.</p>
-        </span>
+    </a>
+    <p className="item__description">GadgetGo is a team project e-commerce website that features a functional e-commerce website in the database that simulates the user buying and selling electronics equipment. I worked hand in hand with my teammates through Github. We utilize the use of Branch and merging them. The database is a json file that is being fed to a MongoDb in the backend. You can also check out this <a href="https://github.com/Salomhamwi/GadgetGO-E-commerce-Readme.git" className="item__link">Readme .</a></p>
+</span>
 
         <span className="project__item">
         <h3 className="item__title">Cookie generator game coming through! *Click the image*</h3>
