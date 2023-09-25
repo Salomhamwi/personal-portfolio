@@ -9,23 +9,16 @@ import Contact from './components/contact/Contact';
 
 const App = () => {
 
-  const [darkMode, setDarkMode] = useState(false);
-
-  // Function to toggle dark mode
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
   return (
-    <>
-      <main className={`main ${darkMode ? 'dark-mode' : ''}`}>
-        <Sidebar darkMode={darkMode} />
+    <main>
+    <Sidebar/>
       <Home />
       <About />
       <Services />
       <Portfolio />
       <Contact />
     </main>
-    </>
+    
   );
 }
 
