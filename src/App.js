@@ -17,9 +17,6 @@ const App = () => {
   };
   return (
     <>
-    <button className="toggle-button" onClick={toggleDarkMode}>
-        {darkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
       <main className={`main ${darkMode ? 'dark-mode' : ''}`}>
         <Sidebar darkMode={darkMode} />
       <Home />
