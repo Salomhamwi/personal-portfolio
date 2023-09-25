@@ -6,14 +6,22 @@ import cookiegame from "../../images project/cookiesgame.png"
 import dodgearrows from "../../images project/dodgearrows.png"
 import Roster from "../../images project/RosterScreenshot.png"
 import gadgetgo from "../../images project/gadgetgo.png"
+import LLtrigger from "../../images project/LLtrigger website showcase.png"
 
 const Portfolio = () => {
 return (
     <section className="portfolio container" id="portfolio">
-        <h2 className="section__title">My Projects *Hover Over images 😉*</h2>
+        <h2 className="section__title">My Projects</h2>
 
         <span className="project__item">
-        <h3 className="item__title">Dragon Boat Roster Planner: K-Sync *Click the image*</h3>
+        <h3 className="item__title">LLTrigger E-commerce Website *Work in Progress* </h3>
+        
+        <img src={LLtrigger} alt="" className="item__screenshot" />
+        <p className="item__description">Working Side by side with a twitch streamer to promote their merch, an interactive and resposive website that will serve their clients and provide for them Merchandise , work schedule and many more services. </p>
+        </span>
+
+        <span className="project__item">
+        <h3 className="item__title">Dragon Boat Roster Planner: K-Sync</h3>
         <a href="https://k-sync-final-project-salomhamwi.vercel.app/" className="item__link">
         <img src={Roster} alt="" className="item__screenshot" />
         </a>
@@ -29,7 +37,7 @@ return (
 </span>
 
         <span className="project__item">
-        <h3 className="item__title">Cookie generator game coming through! *Click the image*</h3>
+        <h3 className="item__title">Cookie generator game coming through!</h3>
         <a href="https://react-effects-salomhamwi.vercel.app/" className="item__link">
         <img src={cookiegame} alt="" className="item__screenshot" />
         </a>
@@ -37,7 +45,7 @@ return (
         </span>
 
         <span className="project__item">
-        <h3 className="item__title">Dodge the Arrows Get high score! *Click the image*</h3>
+        <h3 className="item__title">Dodge the Arrows Get high score!</h3>
         <a href="https://project-js-nyan-cat-salomhamwi.vercel.app/" className="item__link">
         <img src={dodgearrows} alt="" className="item__screenshot" />
         </a>
@@ -46,23 +54,13 @@ return (
         </span>
 
         <span className="project__item">
-        <h3 className="item__title">Hang im! word game *Click the image*</h3>
+        <h3 className="item__title">Hang im! word game</h3>
         <a href="https://react-state-p1-salomhamwi.vercel.app/" className="item__link">
         <img src={hangim} alt="" className="item__screenshot" />
         </a>
         
         <p className="item__description">Inspired by the classic hang im! game, we utilize React propertize, in order to get the database and make different jsx componants in react. The user has up to 10 tries to get the word.</p>
         </span>
-
-        <span className="project__item">
-        <h3 className="item__title">Search bar Amazon inspired *Click the image*</h3>
-        <a href="https://react-state-p2-salomhamwi.vercel.app/" className="item__link">
-        <img src={searchbar} alt="" className="item__screenshot" />
-        </a>
-        
-        <p className="item__description">Inspired by Amazon search bar! This webpage searches into an existing small database, but it shares the same proportizes such as bold after the writing and keyboard functionallity in addition to mouse.</p>
-        </span>
-
 
     </section>
 

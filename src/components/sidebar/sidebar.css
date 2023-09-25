@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 80px; /* Adjust the width as needed */
+  width: 60px; /* Adjust the width as needed */
   background-color: #333; /* Adjust the background color as needed */
   z-index: 1; /* Ensure the sidebar is above other content */
 }
@@ -48,7 +48,7 @@
 }
 
 /* Media query for screens less than 950px */
-@media (max-width: 950px) {
+@media (max-width: 1222px) {
   .Container {
     width: 100%;
     height: auto;
@@ -58,28 +58,23 @@
   }
 
   .nav {
+    
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    background-color: #333; /* Adjust the background color as needed */
-  }
-
-  .nav__menu {
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav__list {
-    flex-direction: row; /* Display items in a row */
-    margin: 0;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    
   }
 
   .nav__item {
     margin: 0;
-    margin-right: 10px; /* Add a gap between items */
   }
 
-  .nav__link {
-    padding: 15px 20px; /* Increase padding to make items bigger */
+  .nav__list {
+    display: flex;
+    flex-direction: row; /* Display items in a row */
+    gap: 40px;
+    margin: 0;
   }
+
 }
