@@ -23,7 +23,7 @@ return (
         <div className="services__card card-3">
             <i className="fa-solid fa-paintbrush fa-bounce"></i>
             <h3 className="services__title">UI-UX Design</h3>
-            <p className="services__description">Simple and beginner designer.</p>
+            <p className="services__description">Simple and creative designs.</p>
         </div>
 
     </div>
