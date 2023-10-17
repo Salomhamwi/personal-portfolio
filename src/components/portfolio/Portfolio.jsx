@@ -14,13 +14,6 @@ return (
         <h2 className="section__title">My Projects</h2>
 
         <span className="project__item">
-        <h3 className="item__title">LLTrigger E-commerce Website *Work in Progress* </h3>
-        
-        <img src={LLtrigger} alt="" className="item__screenshot" />
-        <p className="item__description">Working Side by side with a twitch streamer to promote their merch, an interactive and resposive website that will serve their clients and provide for them Merchandise , work schedule and many more services. </p>
-        </span>
-
-        <span className="project__item">
         <h3 className="item__title">Dragon Boat Roster Planner: K-Sync</h3>
         <a href="https://k-sync-final-project-salomhamwi.vercel.app/" className="item__link">
         <img src={Roster} alt="" className="item__screenshot" />
