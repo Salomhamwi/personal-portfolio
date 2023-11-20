@@ -6,7 +6,6 @@ import cookiegame from "../../images project/cookiesgame.png"
 import dodgearrows from "../../images project/dodgearrows.png"
 import Roster from "../../images project/RosterScreenshot.png"
 import gadgetgo from "../../images project/gadgetgo.png"
-import LLtrigger from "../../images project/LLtrigger website showcase.png"
 
 const Portfolio = () => {
 return (
