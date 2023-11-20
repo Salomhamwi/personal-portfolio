@@ -3,7 +3,7 @@ import "./contact.css"
 //General comment on the forms: Filling out the form and clicking on send message, will get the information data getform.io server
 const Contact = () => {
 return (
-    <section className="contact container section" id="contact">
+    <section className="contact container section" id="contact" data-loading="contact">
         <h2 className="section__title">Get In Touch</h2>
 
         <div className="contact__container grid">

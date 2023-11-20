@@ -11,7 +11,7 @@ import CV from "../../images project/CV.pdf"
 
 const About = () => {
 return (
-    <section className="about container" id="about">
+    <section className="about container" id="about" data-loading="about">
     <h2 className="section__title">
         About me
     </h2>

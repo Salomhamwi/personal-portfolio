@@ -1,5 +1,20 @@
-.main {
-  margin-left: 120px;
+/* App.css */
+
+/* ... other styles ... */
+
+/* Initial state - sections are hidden off-screen */
+.home,
+.about,
+.services,
+.portfolio,
+.contact {
+  opacity: 0;
+  transform: translateX(-100%); /* Initially off-screen to the left */
+  transition: opacity 1s, transform 1s; /* Transition for opacity and transform */
 }
 
-
+/* Class to apply when the sections are loaded */
+.loaded {
+  opacity: 1;
+  transform: translateX(0); /* Slide in from left to center */
+}
