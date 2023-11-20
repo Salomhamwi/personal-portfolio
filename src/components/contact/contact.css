@@ -1,5 +1,4 @@
 .contact.container {
-    background-color: var(--body-color);
     padding: 60px 0;
 }
 
@@ -30,18 +29,15 @@
 .contact__form {
     display: grid;
     gap: 20px;
-    background-color: var(--body-color);
 }
 
 .contact__form-group {
     display: grid;
     gap: 20px;
-    background-color: var(--body-color);
 }
 
 .contact__form-div {
     position: relative;
-    background-color: var(--body-color);
 }
 
 .contact__form-input {
