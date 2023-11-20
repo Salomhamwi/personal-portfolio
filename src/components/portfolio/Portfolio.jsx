@@ -10,8 +10,8 @@ import LLtrigger from "../../images project/LLtrigger website showcase.png"
 
 const Portfolio = () => {
 return (
-    <section className="portfolio container" id="portfolio">
-        <h2 className="section__title">My Projects</h2>
+    <section className="portfolio container" id="projects">
+        <h2 className="section__title">Projects</h2>
 
         <span className="project__item">
         <h3 className="item__title">Dragon Boat Roster Planner: K-Sync</h3>
