@@ -76,35 +76,26 @@
     position: fixed;
   }
 
-.line {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 4px 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  /* Neon shiny effect */
-  background-image: linear-gradient(45deg, #f06, #9f6, #09f, #f06);
-  background-size: 400%;
-  animation: gradientAnimation 2s linear infinite;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
-  100% {
-    background-position: 100% 50%;
+  
+  /* Adjust styling for the open state if needed */
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
   }
-}
-
-.hamburger.open .line:nth-child(1),
-.hamburger.open .line:nth-child(3) {
-  transform: translateY(0) rotate(45deg);
-}
-
-.hamburger.open .line:nth-child(2) {
-  opacity: 0;
-}
+  
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
 
 /* Blurred effect */
 .Container {

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Rubik:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
   /* color mode hsl: (hue, sat, lightness)*/
@@ -9,14 +9,13 @@
   --body-color: hsl(0, 0%, 10%); /* Dark background color */
   --container-color: #111; /* Adjusted container color */
 
-  /* font size time*/
-  --body-font : 'Rubik', sans-serif;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.2rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.8rem;
+  --body-font: 'Lato', sans-serif;
+  --h1-font-size: clamp(1.50rem, 5vw, 2.25rem);
+--h2-font-size: clamp(1.25rem, 3vw, 1.5rem);
+--h3-font-size: clamp(1rem, 2.5vw, 1.2rem);
+--normal-font-size: clamp(0.93rem, 2vw, 1rem);
+--small-font-size: clamp(0.81rem, 1.5vw, 0.875rem);
+--smaller-font-size: clamp(0.74rem, 1vw, 0.8rem);
 
   /*font weight time*/
   --font-medium: 500;
@@ -33,12 +32,12 @@
 /* responsive typo*/
 @media (max-width: 1222px) {
   :root {
-  --h1-font-size: 1.75rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.93rem;
-  --small-font-size: 0.81rem;
-  --smaller-font-size: 0.74rem;
+    --h1-font-size: clamp(1.50rem, 5vw, 1.75rem);
+    --h2-font-size: clamp(1rem, 3vw, 1.25rem);
+    --h3-font-size: clamp(0.8rem, 2.5vw, 1rem);
+    --normal-font-size: clamp(0.93rem, 2vw, 0.93rem);
+    --small-font-size: clamp(0.81rem, 1.5vw, 0.81rem);
+    --smaller-font-size: clamp(0.74rem, 1vw, 0.74rem);
   }
 }
 
@@ -104,10 +103,7 @@ img {
   margin: 0 auto;
 }
 
-.grid {
-  padding-top : 7rem;
-  padding-bottom: 2rem;
-}
+
 
 .section {
   padding-top: 7rem;
@@ -148,9 +144,7 @@ img {
 
 
 body {
-
-  background-image: url('./images project/giffy.gif');
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional - fixes the background while scrolling */
-  background-size: cover; /* Adjust to cover the entire viewport */
+  background: linear-gradient(to right, #111, #333); /* Adjust the gradient colors as needed */
 }
+
+

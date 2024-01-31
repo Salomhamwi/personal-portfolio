@@ -22,7 +22,7 @@ return (
 
         <div className="about__data">
             <div className="about__info">
-                <p className="about_text">Ever since I was young, I have always thrived to develop and learn from more experienced people in the industry. My teamwork skills are astonishing as I always give my absolute best to make the job easier for my colleagues. I am always open to learning new skills, which has enabled me to develop a strong attitude towards teamwork and creativity. Let's work together!</p>
+                <p className="about_text">I welcome constructive criticism, constantly striving for self-improvement within a collaborative team environment. My unwavering optimism and commitment to perfection drive me to be a go-getter, always pursuing opportunities for enhancement. I am consistently working with individuals who surpass my skill set, including other developers, to review the quality of my code and achieve a level of perfection in my work. I invite you to contact me with any improvement suggestions that could help me advance my career or simply to engage in a meaningful conversation.</p>
                 <div className="centered-link"><a href={CV} className="btn">View My CV</a></div>
             </div>
 
